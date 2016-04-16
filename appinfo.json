@@ -1,0 +1,45 @@
+{
+    "appKeys": {},
+    "capabilities": [
+        ""
+    ],
+    "companyName": "Android Hell",
+    "enableMultiJS": false,
+    "longName": "Knibble In The Round",
+    "projectType": "native",
+    "resources": {
+        "media": [
+            {
+                "file": "images/pebble-icon.png",
+                "menuIcon": true,
+                "name": "IMAGE_MENU_LOGO",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/action_icon_plus.png",
+                "name": "IMAGE_ICON_PLUS",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            },
+            {
+                "file": "images/action_icon_menu_color.png",
+                "name": "IMAGE_ICON_MENU",
+                "targetPlatforms": null,
+                "type": "bitmap"
+            }
+        ]
+    },
+    "sdkVersion": "3",
+    "shortName": "Knibble In The Round",
+    "targetPlatforms": [
+        "aplite",
+        "basalt",
+        "chalk"
+    ],
+    "uuid": "9223b087-8ea6-4c86-a0cd-8c408352f02b",
+    "versionLabel": "1.0",
+    "watchapp": {
+        "watchface": false
+    }
+}
