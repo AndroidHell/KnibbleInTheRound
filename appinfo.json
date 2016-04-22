@@ -33,12 +33,10 @@
     "sdkVersion": "3",
     "shortName": "Knibble In The Round",
     "targetPlatforms": [
-        "aplite",
-        "basalt",
         "chalk"
     ],
     "uuid": "9223b087-8ea6-4c86-a0cd-8c408352f02b",
-    "versionLabel": "1.0",
+    "versionLabel": "1.2",
     "watchapp": {
         "watchface": false
     }

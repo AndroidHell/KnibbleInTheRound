@@ -340,11 +340,7 @@ void handle_init(void) {
   
 
   // Set the counter label
-  #if defined(PBL_ROUND)
-    top_counter_label = text_layer_create(GRect(10, 15, 120, 30));
-  #else
-    top_counter_label = text_layer_create(GRect(10, 15, 90, 30));
-  #endif
+  top_counter_label = text_layer_create(GRect(10, 15, PBL_IF_ROUND_ELSE(120, 90), 30));
   text_layer_set_font(top_counter_label, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   text_layer_set_text(top_counter_label, "ROW COUNT");
   text_layer_set_text_alignment(top_counter_label, GTextAlignmentRight);
@@ -360,11 +356,7 @@ void handle_init(void) {
   layer_add_child(root_layer, text_layer_get_layer(bot_counter));
 
   // Set the counter label
-  #if defined(PBL_ROUND)
-    bot_counter_label = text_layer_create(GRect(10, 90, 105, 30));
-  #else
-    bot_counter_label = text_layer_create(GRect(10, 90, 90, 30));
-  #endif
+  bot_counter_label = text_layer_create(GRect(10, 90, PBL_IF_ROUND_ELSE(105, 90), 30));
   text_layer_set_font(bot_counter_label, fonts_get_system_font(FONT_KEY_GOTHIC_24_BOLD));
   text_layer_set_text(bot_counter_label, "REPEAT");
   text_layer_set_text_alignment(bot_counter_label, GTextAlignmentRight);
